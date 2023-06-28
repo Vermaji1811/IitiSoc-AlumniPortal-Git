@@ -1,0 +1,241 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header{
+  min-height:100vh;
+  width:100%;
+  background-image:linear-gradient(rgba(17, 28, 73, 0.7),rgba(4,9,30,0.7)),url(../images/main_bg.jpg);
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 75px;
+
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+.nav-links ul li::after{
+  content:'' ;
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+  
+}
+.nav-links ul li:hover::after{
+  width:100%;
+}
+.textbox{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.textbox h1{
+  font-size: 62px;
+}
+.class1{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 15px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+
+}
+.class1:hover{
+border: 1px solid #03863e;
+background: #03863e;
+transition: 1s;
+}
+nav .fa{
+  display: none;
+}
+@media(max-width:700px){
+  .textbox h1{
+      font-size: 20px;
+  }
+  .nav-links ul li{
+      display: block;
+  }
+  .nav-links{
+      position: absolute;
+      background: #f44336;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+
+  }
+  nav .fa{
+      display: block;
+      color: #e2e8e1;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+
+  }
+  .nav-links ul{
+      padding:30px;
+  }
+}
+/*  platfrom wala */
+.geninfo{
+
+  text-decoration: none;
+ width:100%;
+ background-image: linear-gradient(rgba(4, 9, 100, 0.65),rgba(115, 201, 75, 0.65)), url(../images/main_bg2.jpg);
+ background-position: center; 
+ background-size: cover;
+ position: relative;
+ margin:auto;
+ text-align: center;
+ padding-top: 50px;
+
+}
+h1{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+p{
+  color: #f4f5f8;
+  font-size:14px ;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+
+}
+.row{
+ margin-top: 45;
+  display: flex ;
+  justify-content: space-between;
+}
+.geninfo-col{
+  flex-basis: 30%;
+  background: #da9c9c;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  margin:10px;
+  transition: 1s;
+
+}
+.link1 {
+  text-decoration: none;
+}
+
+h3{
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  margin:5px 0;
+}
+.geninfo-col:hover{
+  text-decoration: none;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6) ;
+}
+@media(max-width:700px){
+  .row{
+      flex-direction: column;
+  }
+}
+
+/* /campus */
+.campus{
+  width:80%;
+  margin: auto;
+  margin-top: -30px;
+  text-align: center;
+  padding-top: 50px;
+
+}
+h4{
+  color: black;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.4rem;
+  margin:5px 0;
+}
+
+.campus-col{
+  display: flex;
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.campus-col img{
+  width: 100%;
+  height: 350px;
+
+}
+
+.layer{ 
+   background:transparent;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top:0;
+   left: 0;
+   transition: .5s;
+   display: flex;
+   
+}
+.layer:hover{
+  background: rgba(47, 115, 243, 0.7);
+}
+
+.layer h2{
+  width:100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom:0;
+  left: 50%;
+  transform:translateX(-50%) ;
+  position: absolute;
+  transform:.5s;
+
+}
+.layer:hover h2{
+  bottom: 49%;
+  opacity:1;
+
+} 

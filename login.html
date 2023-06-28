@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in/ Join the Alumni Portal</title>
+    <link rel="stylesheet" href="./css/loginStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/a099109f61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a><img src="./images/cell_logo.jpeg" alt="LOGO"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">EVENTS</a></li>
+                    <li><a href="">CONNECT</a></li>
+                    <li><a href="">VIEW</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="signuppage">
+        <div class="form-box">
+            <h1 id="heading">Sign Up</h1>
+            <form>
+                <div class="input-items">
+
+                    <div class="input-place" id="nameplace">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="input-place">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-place">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    
+                    <div class="input-place" id="contactplace">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="number" placeholder="Contact">
+                    </div>
+
+                    <div class="input-place" id="jobplace">
+                        <i class="fa-solid fa-business-time"></i>
+                        <input type="text" placeholder="Job Details">
+                    </div>
+
+                    <p>Forgot password? <a href="#">Click Here</a></p>
+                    <p>Are you a member of Alumni Cell? <a href="#"> Click Here</a></p>
+                </div>
+                <div class="btn-des">
+                    <button type="button" id="joinbutton">Sign Up</button>
+                    <button type="button" id="loginbutton" class="disable">Sign in</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    </section>
+
+
+
+<script>
+    let navLinks = document.getElementById("navLinks");
+    let joinbutton = document.getElementById("joinbutton");
+    let loginbutton = document.getElementById("loginbutton");
+    let heading = document.getElementById("heading");
+    let nameplace = document.getElementById("nameplace");
+    let contactplace = document.getElementById("contactplace");
+    let jobplace = document.getElementById("jobplace");
+
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+
+    loginbutton.onclick = function(){
+        nameplace.style.maxHeight = "0";
+        contactplace.style.maxHeight = "0";
+        jobplace.style.maxHeight = "0";
+        heading.innerHTML = "Sign in";
+        joinbutton.classList.add("disable");
+        loginbutton.classList.remove("disable");
+    }
+
+    joinbutton.onclick = function(){
+        nameplace.style.maxHeight = "60px"
+        contactplace.style.maxHeight = "60px";
+        jobplace.style.maxHeight = "60px";
+        heading.innerHTML = "Sign Up";
+        joinbutton.classList.remove("disable");
+        loginbutton.classList.add("disable");
+    }
+</script>
+
+</body>
+</html>
