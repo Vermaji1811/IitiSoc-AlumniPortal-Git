@@ -1,0 +1,29 @@
+Team Details: 
+Team Leader:
+Name: Divyansh Gangwar
+Roll No: 210003031
+GitHub: https://github.com/DivyanshGr
+LinkedIn: https://www.linkedin.com/in/divyansh-gangwar-260052224/
+Skills: C++,Python,DJANGO,HTML,CSS,JAVASCRIPT
+
+Team Member 1:
+Name:  Abhishek Ranjan
+Roll No:  210003006
+GitHub:  https://github.com/Abhishekrnjn25
+LinkedIn:  https://www.linkedin.com/in/abhishek-ranjan-01467b25b/
+Skills:  HTML,CSS,C++,Python
+
+Team Member 2:
+Name: Aryan Raj
+Roll No: 210003017
+GitHub: https://github.com/aryanraj8158
+LinkedIn: https://www.linkedin.com/in/aryan-raj-160526228/
+skills:C++,HTML,CSS,Javascript
+
+Team Member 3:
+Name: Priyanshu Verma
+Roll No: 210003057
+GitHub:  https://github.com/Vermaji1811
+LinkedIn:  https://www.linkedin.com/in/priyanshu-verma-42b3b4197
+Skills: HTML, CSS, C++, JavaScript
+
